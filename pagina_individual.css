@@ -97,16 +97,16 @@ body {
     display: inline-block;
   }
 #ft1 {
-    background-image: url('1.png');
+    background-image: url('media/1.png');
 }
 #ft2 {
-    background-image: url('2.png');
+    background-image: url('media/2.png');
 }
 #ft3 {
-    background-image: url('3.png');
+    background-image: url('media/3.png');
 }
 #ft4 {
-    background-image: url('4.png');
+    background-image: url('media/4.png');
 }
 
 

@@ -3,53 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="joao1.css">
+    <title>ProjetoCSS</title>
 </head>
 <body>
-    <header>
-        <h1>João Pedro Rodriguez</h1>
-        <p><a href="projeto.html">Voltar ao menu principal</a></p>
-    </header>
-    <main>
-        <img src="fotoJP.jpg" width="300px">
-        <p>Olá! Sou o João Pedro!</p>
-        <p>Eu sou aluno da Universidade Federal Fluminense, e estou como coordenador técnico da FrontEnd Solutions! Meu objetivo é prestar um serviço muito profissional para seja lá qual for a sua adversidade! Abraços!</p>
-        <h2>Me conheça um pouco mais!</h2>
-        <h4>Hobbies:</h4>
-        <ul>
-            <li>Gosto muito de jogar Futebol!</li> <br>
-            <li>Aprecio músicas gospel</li> <br>
-            <li>Adoro malhar! Só é difícil ir! kkk</li> <br>
-            <li>Gosto muito de passear de carro!</li> <br>
-            <li>Sou um entusiasta do conhecimento!</li>
-        </ul>
-        <h4>Assuntos que me interessam:</h4>
-            <ol>
-                <li>Tecnologia</li> <br>
-                <li>Relacionamentos</li> <br>
-                <li>Corporativismo</li> <br>
-                <li>Fé e espiritualidade</li> <br>
-                <li>Fofoca :)</li>
-            </ol>
-        <section>
-            <h2>Seção de FeedBacks:</h2>
-            <form>
-                <input type="text" placeholder="Nome Completo" required> <br>
-                <textarea style="resize:none" placeholder="Escreva aqui seu FeedBack sobre o colaborador João Pedro" rows="15" cols="40" required></textarea> <br>
-                <button type="submit">Enviar Feedback</button> <br>
-            </form>
-        </section>
-    </main>
-    <hr style="border-width: 5px;">
-    <footer>
-        <nav>
-            <h4>Redes sociais do colaborador:</h4>
-            <a href="https://github.com/JPMASTERALPHA" target="_blank">|GitHub|</a>
-            <a href="projeto.html">|Instagram|</a>
-            <a href="projeto.html">|Whatsapp|</a> <br>
-            <h4>Contato Particular:</h4>
-            <a href="joao2.html"><button>Clique neste botão</button></a>
-        </nav>
-    </footer>
+    <div id="header">
+        <p id="title">João Pedro</p>
+        <a href="https://www.google.com" id="links">Link   Link   Link</a>
+    </div>
+    <div id="apresentation">
+        <div id="image">
+            <img src="fotoJP.jpg" id="photo" width="247px" height="247px">
+        </div>
+        <div id="paragraph">
+            <p class="subtitle">Olá! Sou o João Pedro!</p> <br>
+            <p id="text">Eu sou aluno da Universidade Federal Fluminense, e estou como coordenador técnico da FrontEnd Solutions! Meu objetivo é prestar um serviço muito profissional para seja lá qual for a sua adversidade! Abraços!</p>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="topico1">
+            <div style="display: flex; height: 100%">
+                <p height: 100%; class="subtitleL">Hobbies</p>
+            </div>
+            <div class="l11">
+                <div class="stone0">
+                    <p>Futebol</p>
+                </div>
+                <div class="stone0">
+                    <p>Música</p>
+                </div>
+                <div class="stone0">
+                    <p>Viagens</p>
+                </div>
+            </div>
+           <div class="l2">
+                <div class="stone0">
+                    <p>Videogame</p>
+                </div>
+                <div class="stone0">
+                    <p>Tecnologias</p>
+                </div>
+           </div> 
+        </div>
+        <div class="topico2">
+            <div style="display: flex; height: 100%">
+                <p height: 100%; class="subtitleL">Assuntos</p>
+            </div>
+            <div class="l12">
+                <div class="stone0">
+                    <p>Tecnologia</p>
+                    <div style="background-color: gold;" class="stone1">1</div>
+                </div>
+                <div class="stone0">
+                    <p>Corporativismo</p>
+                    <div style="background-color: darkgrey;" class="stone1">2</div>
+                </div>
+                <div class="stone0">
+                    <p>Relacionamento</p>
+                    <div style="background-color: saddlebrown;" class="stone1">3</div>
+                </div>
+            </div>
+            <div class="l2">
+                <div class="stone0">
+                    <p>Família</p>
+                </div>
+                <div class="stone0">
+                    <p>Religião</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <form>
+            <p class="subtitle">FeedBack</p>
+            <div>
+                <textarea class="msg" id="msg1" type="text" placeholder="Dê um feedback para esse desenvolvedor!" rows="1" required></textarea>
+            </div>
+            <div>
+                <textarea class="msg" id="msg2" type="text" placeholder="Digite seu nome aqui!" rows="1" required></textarea>
+            </div>
+            <div style="display: flex; justify-content: space-evenly;">
+                <button id="button1" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div id="footer">
+        <footer>
+            <div style="display: flex; justify-content: space-around;">
+                <button id="button2">
+                    <a style="text-decoration: none; color: black;" href="joao2.html" target="_blank">Entrar em Contato</a>
+                </button>
+            </div>
+            <div style="display: flex; justify-content: space-evenly; min-width: 188px;">
+                <a class="ft" id="ft1" href="https://github.com/JPMASTERALPHA" target="_blank"></a>
+                <a class="ft" id="ft2" href="joao1.html" target="_blank"></a>
+                <a class="ft" id="ft3" href="joao1.html" target="_blank"></a>
+                <a class="ft" id="ft4" href="joao1.html" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

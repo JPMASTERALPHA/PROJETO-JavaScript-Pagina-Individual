@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pagina_individual.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Darker+Grotesque:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>ProjetoCSS</title>
 </head>
 <body>
+<!-------------------------------------------------------HEADER---------------------------------------------------------------------->
     <div id="header">
         <p id="title">João Pedro</p>
         <a href="https://www.google.com" id="links">Link   Link   Link</a>
     </div>
+<!-------------------------------------------------------HEADER---------------------------------------------------------------------->
+
+<!-------------------------------------------------------APRESENTATION--------------------------------------------------------------->
     <div id="apresentation">
-        <div id="image">
+        <div id="photoContainer">
             <img src="media/fotoJP.jpg" id="photo" width="247px" height="247px">
         </div>
         <div id="paragraph">
-            <p class="subtitle">Olá! Sou o João Pedro!</p> <br>
-            <p id="text">Eu sou aluno da Universidade Federal Fluminense, e estou como coordenador técnico da FrontEnd Solutions! Meu objetivo é prestar um serviço muito profissional para seja lá qual for a sua adversidade! Abraços!</p>
+            <p id="paragraphSubtitle">Olá! Sou o João Pedro!</p> <br>
+            <p id="paragraphDescription">Eu sou aluno da Universidade Federal Fluminense, e estou como coordenador técnico da FrontEnd Solutions! Meu objetivo é prestar um serviço muito profissional para seja lá qual for a sua adversidade! Abraços!</p>
         </div>
     </div>
+<!-----------------------------------------------------APRESENTATION-------------------------------------------------------------->
+
+<!-------------------------------------------------------MAIN---------------------------------------------------------------------->
     <div id="menu">
         <div class="topico1">
             <div style="display: flex; height: 100%">
-                <p height: 100%; class="subtitleL">Hobbies</p>
+                <p height: 100%; class="listasSubtitle">Hobbies</p>
             </div>
             <div class="l11">
                 <div class="stone0">
@@ -47,7 +55,7 @@
         </div>
         <div class="topico2">
             <div style="display: flex; height: 100%">
-                <p height: 100%; class="subtitleL">Assuntos</p>
+                <p height: 100%; class="listasSubtitle">Assuntos</p>
             </div>
             <div class="l12">
                 <div class="stone0">
@@ -73,34 +81,36 @@
             </div>
         </div>
     </div>
-    <div id="form">
-        <form>
-            <p class="subtitle">FeedBack</p>
-            <div>
-                <textarea class="msg" id="msg1" type="text" placeholder="Dê um feedback para esse desenvolvedor!" rows="1" required></textarea>
-            </div>
-            <div>
-                <textarea class="msg" id="msg2" type="text" placeholder="Digite seu nome aqui!" rows="1" required></textarea>
-            </div>
-            <div style="display: flex; justify-content: space-evenly;">
-                <button id="button1" type="submit">Enviar</button>
-            </div>
-        </form>
+<!-------------------------------------------------------MAIN---------------------------------------------------------------------->
+
+<!------------------------------------------------------FEEDBACK SECTION----------------------------------------------------------->
+    <div id="formContainer">
+        <p id="formSubtitle">Feedback</p>
+        <div id="MsgsButtonContainer">
+            <textarea id="formMsg1" placeholder="Digite aqui seu Feedback!"></textarea>
+            <textarea id="formMsg2" placeholder="Digite aqui seu nome!"></textarea>
+            <button id="formButton">Enviar</button>
+        </div>
     </div>
-    <div id="footer">
-        <footer>
-            <div style="display: flex; justify-content: space-around;">
-                <button id="button2">
-                    <a style="text-decoration: none; color: black;" href="joao2.html" target="_blank">Entrar em Contato</a>
-                </button>
-            </div>
-            <div style="display: flex; justify-content: space-evenly; min-width: 188px;">
-                <a class="ft" id="ft1" href="https://github.com/JPMASTERALPHA" target="_blank"></a>
-                <a class="ft" id="ft2" href="pagina_individual.html" target="_blank"></a>
-                <a class="ft" id="ft3" href="pagina_individual.html" target="_blank"></a>
-                <a class="ft" id="ft4" href="pagina_individual.html" target="_blank"></a>
-            </div>
-        </footer>
+<!------------------------------------------------------FEEDBACK SECTION----------------------------------------------------------->
+
+<!-------------------------------------------DOM----------------------------------------------------------------------------------->
+    <div id="feedbacksContainer">
+
     </div>
+<!---------------------------------------DOM----------------------------------------------------------------------------------->
+
+<!-----------------------------FOOTER------------------------------------------------------------------------------------------->
+    <div id="footerContainer">
+            <a href="joao2.html" target="_blank"><button id="footerButton">Entrar em Contato</button></a>
+        <div id="footerLinksContainer">
+            <a class="ft" id="ft1" href="https://github.com/JPMASTERALPHA" target="_blank"></a>
+            <a class="ft" id="ft2" href="pagina_individual.html" target="_blank"></a>
+            <a class="ft" id="ft3" href="pagina_individual.html" target="_blank"></a>
+            <a class="ft" id="ft4" href="pagina_individual.html" target="_blank"></a>
+        </div>
+    </div>
+ <!-----------------------------FOOTER------------------------------------------------------------------------------------------->
 </body>
+<script src="pagina_individual.js"></script>
 </html>
